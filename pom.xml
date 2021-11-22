@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>lrp_schul</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <!-- Properties Section. Change ND4J versions here, if required -->
+    <properties>
+        <matsim.version>12.0-SNAPSHOT</matsim.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <repositories>
+        <repository>
+            <!-- Repository for MATSim releases (MATSim is not on Maven central) -->
+            <id>matsim</id>
+            <url>https://dl.bintray.com/matsim/matsim</url>
+        </repository>
+
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+        <repository>
+            <id>osgeo-alt</id>
+            <url>https://repo.osgeo.org/repository/release/</url>
+        </repository>
+        <repository>
+            <id>geomajas</id>
+            <name>Geomajas Maven Repository</name>
+            <url>http://maven.geomajas.org/(http://maven.geomajas.org/)</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.github.yannrichet</groupId>
+            <artifactId>JMathPlot</artifactId>
+            <version>1.0.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.graphhopper</groupId>
+            <artifactId>jsprit-core</artifactId>
+            <version>1.7.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jfree</groupId>
+            <artifactId>jfreechart</artifactId>
+            <version>1.5.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.graphhopper</groupId>
+            <artifactId>jsprit-io</artifactId>
+            <version>1.7.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.graphhopper</groupId>
+            <artifactId>jsprit-analysis</artifactId>
+            <version>1.7.2</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.matsim.contrib/analysis -->
+        <dependency>
+            <groupId>org.matsim.contrib</groupId>
+            <artifactId>analysis</artifactId>
+            <version>12.0-2020w02-avoev.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.matsim</groupId>
+            <artifactId>contrib</artifactId>
+            <version>12.0-2020w02-avoev.0</version>
+            <type>pom</type>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-math3</artifactId>
+            <version>3.6.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.nd4j</groupId>
+            <artifactId>nd4j-native</artifactId>
+            <version>1.0.0-beta7</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.validation</groupId>
+            <artifactId>validation-api</artifactId>
+            <version>2.0.1.Final</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api -->
+        <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>2.3.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.glassfish.jaxb/jaxb-runtime -->
+        <dependency>
+            <groupId>org.glassfish.jaxb</groupId>
+            <artifactId>jaxb-runtime</artifactId>
+            <version>2.3.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.matsim.contrib</groupId>
+            <artifactId>freight</artifactId>
+            <version>12.0-2020w02-avoev.0</version>
+        </dependency>
+
+        <dependency>
+            <!-- Include the JUnit testing library.  Not transitive. -->
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>4.1.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.12</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.opencsv</groupId>
+            <artifactId>opencsv</artifactId>
+            <version>3.8</version>
+        </dependency>
+
+    </dependencies>
+</project>
